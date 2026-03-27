@@ -51,9 +51,6 @@ const MapView = ({ userPosition, services, onServiceClick, onMapClick, selectedP
         zoom={14}
         className="h-full w-full min-h-[300px]"
         style={{ minHeight: '300px' }}
-        eventHandlers={onMapClick ? {
-          click: (e: any) => onMapClick(e.latlng.lat, e.latlng.lng)
-        } : undefined}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>'
