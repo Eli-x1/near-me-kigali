@@ -62,6 +62,7 @@ const MapView = ({ userPosition, services, onServiceClick, onMapClick, selectedP
           attribution='&copy; Stamen'
         />
         <RecenterMap lat={center.lat} lng={center.lng} />
+        <MapSearchBar />
 
         {userPosition && (
           <Marker position={[userPosition.lat, userPosition.lng]} icon={userIcon}>

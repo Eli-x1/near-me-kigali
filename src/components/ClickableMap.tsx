@@ -28,8 +28,9 @@ const ClickableMap = ({ position, onPositionChange }: Props) => {
   const center = position || { lat: -1.9403, lng: 29.8739 };
 
   return (
-    <div className="rounded-xl overflow-hidden border border-border h-[300px]">
+    <div className="rounded-xl overflow-hidden border border-border h-[300px] relative">
       <MapContainer center={[center.lat, center.lng]} zoom={14} className="h-full w-full">
+        <MapSearchBar onSelect={onPositionChange} />
         <TileLayer
           attribution='&copy; OSM'
           url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
