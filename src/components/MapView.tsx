@@ -46,7 +46,7 @@ const MapView = ({ userPosition, services, onServiceClick, onMapClick, selectedP
   const center = userPosition || { lat: -1.9403, lng: 29.8739 };
 
   return (
-    <div className={`rounded-xl overflow-hidden border border-border ${className}`}>
+    <div className={`rounded-xl overflow-hidden border border-border relative ${className}`}>
       <MapContainer
         center={[center.lat, center.lng]}
         zoom={14}
