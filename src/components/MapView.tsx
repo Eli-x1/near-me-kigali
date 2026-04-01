@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+import MapSearchBar from './MapSearchBar';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { Service } from '@/lib/supabase';
