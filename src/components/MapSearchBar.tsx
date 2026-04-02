@@ -8,7 +8,12 @@ type SearchResult = {
   lon: string;
 };
 
-const MapSearchBar = ({ onSelect }: { onSelect?: (lat: number, lng: number) => void }) => {
+type MapSearchBarProps = {
+  onSelect?: (lat: number, lng: number) => void;
+  className?: string;
+};
+
+const MapSearchBar = ({ onSelect, className = 'right-3' }: MapSearchBarProps) => {
   const map = useMap();
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<SearchResult[]>([]);
