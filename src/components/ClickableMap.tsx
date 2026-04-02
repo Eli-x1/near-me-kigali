@@ -38,7 +38,7 @@ const ClickableMap = ({ position, onPositionChange }: Props) => {
         {satellite ? 'Street' : 'Satellite'}
       </button>
       <MapContainer center={[center.lat, center.lng]} zoom={14} className="h-full w-full">
-        <MapSearchBar onSelect={onPositionChange} className="right-24 md:right-28" />
+        <MapSearchBar onSelect={onPositionChange} />
         {satellite ? (
           <TileLayer
             attribution='&copy; Esri &mdash; Esri, DeLorme, NAVTEQ'

@@ -72,7 +72,7 @@ const MapView = ({ userPosition, services, onServiceClick, onMapClick, selectedP
           />
         )}
         <RecenterMap lat={center.lat} lng={center.lng} />
-        <MapSearchBar className="right-24 md:right-28" />
+        <MapSearchBar />
 
         {userPosition && (
           <Marker position={[userPosition.lat, userPosition.lng]} icon={userIcon}>
