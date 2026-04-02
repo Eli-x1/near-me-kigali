@@ -62,7 +62,7 @@ const MapSearchBar = ({ onSelect, className = 'right-3' }: MapSearchBarProps) =>
   return (
     <div
       ref={containerRef}
-      className="absolute top-3 left-3 right-3 z-[1000]"
+      className={`absolute top-3 left-3 z-[1000] ${className}`}
       onMouseDown={(e) => e.stopPropagation()}
       onDoubleClick={(e) => e.stopPropagation()}
     >
